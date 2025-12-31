@@ -17,10 +17,24 @@ const fetchTodos = (): Promise<Todo[]> => {
 };
 
 // Hook pour récupérer les todos
-export const useTodos = () => {};
+export const useTodos = async () => {
+  let isError = null
+  let isLoading = true
+  const initialTodos = await fetchTodos();
+  if(!initialTodos){
+    isError = initialTodos;
+  }else{
+    isLoading = false;
+  }
+  return { initialTodos , isLoading , isError }
+};
 
 // Hook pour ajouter un todo
-export const useAddTodo = () => {};
+export const useAddTodo = async () => {
+
+};
 
 // Hook pour basculer l'état completed d'un todo
-export const useToggleTodo = () => {};
+export const useToggleTodo = () => {
+  
+};
