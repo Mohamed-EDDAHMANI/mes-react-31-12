@@ -1,4 +1,4 @@
-import { setFilter } from '../store/filterSlice';
+import  setFilter  from '../store/filterSlice';
 import { useAppDispatch, useAppSelector } from '../store/hooks';
 import type { FilterValue } from '../types/todo';
 

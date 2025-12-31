@@ -1,0 +1,2 @@
+1 - filterSlice dont exist in store 
+2 - add type keyword wor inports in hook.ts file
